@@ -18,6 +18,10 @@ import Mega from './components/mega/Mega'
 import Page1 from './components/pages/Page1'
 import Page2 from './components/pages/Page2'
 import Page3 from './components/pages/Page3'
+import UsingModal from './components/modal/UsingModal'
+import Modal from 'react-modal'
+
+Modal.setAppElement('#root')
 
 export default props => (
   <Router>
@@ -26,6 +30,11 @@ export default props => (
       exact
       render={() => (
         <div className="App">
+          <Card titulo="#13 - Usando Modal" color="#735EC2">
+            <h3>Finalmente aprendi a usar o Modal</h3>
+            <UsingModal />
+          </Card>
+
           <Card titulo="#12 - Navegando pelas páginas" color="red">
             <h2>Navegue pelas páginas</h2>
             <div>
